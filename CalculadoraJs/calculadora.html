@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+                <div id="keyboard">
+                    <button onclick="backspace()" class="operator" id="clear" value="clear" onclick="backspace()">C</button>
+                    <button onclick="clean()" class="operator" id="backspace">CE</button>
+                    <button onclick="insert('%')" class="operator" id="porcentagem" value="%">%</button>
+                    <button onclick="insert('/')" class="operator" id="divisao" value="/">&#247;</button>
+                    <button onclick="insert('7')" class="number" id="sete" value="7">7</button>
+                    <button onclick="insert('8')" class="number" id="oito" value="8">8</button>
+                    <button onclick="insert('9')" class="number" id="nove" value="9">9</button>
+                    <button onclick="insert('*')" class="operator" id="multiplicacao" value="*">&times;</button>
+                    <button onclick="insert('4')" class="number" id="quatro" value="4">4</button>
+                    <button onclick="insert('5')" class="number" id="cinco" value="5">5</button>
+                    <button onclick="insert('6')" class="number" id="seis" value="6">6</button>
+                    <button onclick="insert('-')" class="operator" id="subtracao" value="-">-</button>
+                    <button onclick="insert('1')" class="number" id="um" value="1">1</button>
+                    <button onclick="insert('2')" class="number" id="dois" value="2">2</button>
+                    <button onclick="insert('3')" class="number" id="tres" value="3">3</button>
+                    <button onclick="insert('+')" class="operator" id="adicao" value="+">+</button>
+                    <button class="empty" id="empty"></button>
+                    <button onclick="insert('0')" class="number" id="zero" value="0">0</button>
+                    <button class="empty" id="empty"></button>
+                    <button onclick="equal()" class="operator" id="igual" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
